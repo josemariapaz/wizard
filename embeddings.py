@@ -19,7 +19,7 @@ def read_docx(file_path):
     return '\n'.join(full_text)
 
 # Lista de tus archivos .docx
-file_paths = ['documents/Ventas.docx', 'documents/ADM-PRO-05 Adquisiciones por Administración Rev.4.docx']
+file_paths = ['Ventas.docx', 'ADM-PRO-05 Adquisiciones por Administración Rev.4.docx']
 
 # Crear un DataFrame vacío
 df_docs = pd.DataFrame(columns=['Title', 'Text'])
