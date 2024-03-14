@@ -7,10 +7,10 @@ st.set_page_config(page_title="Datec Wizard", page_icon="images/ISOTIPO.png", la
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.image('images/Logo_Sigi.png')
+    st.image('Logo_Sigi.png')
 
 with col3:
-    st.image('images/LOGO_DATEC.png')
+    st.image('LOGO_DATEC.png')
     
 st.title("Pregúntame algo de Datec")
 #st.info("Check out the full tutorial to build this app in our [blog post](https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/)", icon="📃")
@@ -41,4 +41,4 @@ if st.session_state.messages[-1]["role"] != "assistant":
 col1, col2, col3, col4 = st.columns(4)
 with col4:
     # Imagen
-    st.image('images\Logo_D4G.png', use_column_width=True)
+    st.image('Logo_D4G.png', use_column_width=True)
