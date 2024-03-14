@@ -27,7 +27,8 @@ df_docs = pd.DataFrame(columns=['Title', 'Text'])
 # Leer cada archivo, extraer el contenido y añadirlo al DataFrame
 for file_path in file_paths:
     text = read_docx(file_path)
-    title = file_path.split('/')[-1]
+    # title = file_path.split('/')[-1]
+    title = file_path.split('/')[0]
     df_docs = df_docs._append({'Title': title, 'Text': text}, ignore_index=True)
 
 df = pd.DataFrame(df_docs)
